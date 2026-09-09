@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Personal portfolio website for a developer, designer, and problem-solver."
+    />
+    <title>Your Name | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="#home" class="brand" aria-label="Home">YN</a>
+
+        <button class="nav-toggle" aria-expanded="false" aria-label="Open menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+          <a href="#contact" class="nav-cta">Hire me</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero section">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <p class="eyebrow">Software developer • designer • creator</p>
+            <h1>Building digital experiences that feel human.</h1>
+            <p class="lead">
+              I design and build polished websites and products that help brands stand out,
+              communicate clearly, and convert users into loyal customers.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#projects">View my work</a>
+              <a class="button secondary" href="#contact">Let’s talk</a>
+            </div>
+            <ul class="mini-stats" aria-label="Key metrics">
+              <li><strong>5+</strong><span>Years experience</span></li>
+              <li><strong>24</strong><span>Projects shipped</span></li>
+              <li><strong>98%</strong><span>Client satisfaction</span></li>
+            </ul>
+          </div>
+
+          <div class="hero-visual" aria-label="Profile illustration">
+            <div class="profile-card">
+              <div class="avatar-ring">
+                <div class="avatar">YN</div>
+              </div>
+              <div class="card-badge badge-top">Available for work</div>
+              <div class="card-badge badge-bottom">Based in London</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section alt-section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">About me</p>
+            <h2>Turning ideas into clear, memorable products.</h2>
+          </div>
+
+          <div class="about-grid">
+            <div class="about-copy">
+              <p>
+                I’m a multidisciplinary developer with a passion for crafting elegant interfaces,
+                smooth user experiences, and digital systems that work beautifully behind the scenes.
+              </p>
+              <p>
+                My work blends strategy, design thinking, and engineering to bring thoughtful ideas
+                to life—from startup landing pages to complex product experiences.
+              </p>
+            </div>
+
+            <div class="about-panel">
+              <div>
+                <span>Focus</span>
+                <strong>Product design & front-end development</strong>
+              </div>
+              <div>
+                <span>Tools</span>
+                <strong>Figma, VS Code, React, Node.js</strong>
+              </div>
+              <div>
+                <span>Approach</span>
+                <strong>Simple, strategic, conversion-focused</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Skills</p>
+            <h2>Tools and strengths I bring to each project.</h2>
+          </div>
+
+          <div class="skills-grid">
+            <article class="skill-card">
+              <h3>Frontend</h3>
+              <ul>
+                <li>HTML5</li>
+                <li>CSS3 / Sass</li>
+                <li>JavaScript</li>
+                <li>React</li>
+              </ul>
+            </article>
+
+            <article class="skill-card">
+              <h3>Backend</h3>
+              <ul>
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>REST APIs</li>
+                <li>Authentication</li>
+              </ul>
+            </article>
+
+            <article class="skill-card">
+              <h3>Design</h3>
+              <ul>
+                <li>UI/UX design</li>
+                <li>Brand systems</li>
+                <li>Wireframes</li>
+                <li>Design systems</li>
+              </ul>
+            </article>
+
+            <article class="skill-card">
+              <h3>Workflow</h3>
+              <ul>
+                <li>Git & GitHub</li>
+                <li>Responsive design</li>
+                <li>Performance</li>
+                <li>SEO best practices</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section alt-section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Selected work</p>
+            <h2>Recent projects with real business impact.</h2>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project-card">
+              <div class="project-image project-one"></div>
+              <div class="project-body">
+                <span class="tag">Brand website</span>
+                <h3>Northstar Studio</h3>
+                <p>
+                  A high-converting brand site for a creative agency, designed to showcase work and book more leads.
+                </p>
+                <a href="#contact">Case study</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-image project-two"></div>
+              <div class="project-body">
+                <span class="tag">SaaS product</span>
+                <h3>PulseBoard</h3>
+                <p>
+                  A dashboard experience for teams to streamline operations, reports, and collaboration in real time.
+                </p>
+                <a href="#contact">Case study</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-image project-three"></div>
+              <div class="project-body">
+                <span class="tag">E-commerce</span>
+                <h3>Harbor Market</h3>
+                <p>
+                  A polished storefront and shopping flow built to improve trust, discoverability, and conversions.
+                </p>
+                <a href="#contact">Case study</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <div class="container contact-box">
+          <div>
+            <p class="eyebrow">Let’s work together</p>
+            <h2>Need a site that looks great and performs even better?</h2>
+          </div>
+
+          <div class="contact-actions">
+            <a class="button primary" href="mailto:hello@yourname.com">hello@yourname.com</a>
+            <a class="button secondary" href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© <span id="year"></span> Your Name</p>
+        <div class="socials">
+          <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://dribbble.com" target="_blank" rel="noreferrer">Dribbble</a>
+          <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
