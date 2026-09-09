@@ -1,16 +1,16 @@
 :root {
-  --bg: #07111f;
-  --bg-elevated: rgba(16, 25, 39, 0.8);
-  --panel: rgba(15, 23, 37, 0.9);
-  --panel-soft: rgba(255, 255, 255, 0.04);
-  --card: rgba(255, 255, 255, 0.035);
-  --text: #edf3ff;
-  --muted: #a9b7cf;
-  --primary: #7ae7d4;
-  --primary-strong: #52c5b6;
-  --accent: #8cabff;
-  --border: rgba(255, 255, 255, 0.1);
-  --shadow: 0 25px 60px rgba(4, 8, 20, 0.45);
+  --bg: #101010;
+  --bg-elevated: #171717;
+  --panel: #1b1b1b;
+  --panel-soft: rgba(255, 255, 255, 0.05);
+  --card: #181818;
+  --text: #f3f0e8;
+  --muted: #a6a29a;
+  --primary: #d7ff57;
+  --primary-strong: #b9e63e;
+  --accent: #ff7657;
+  --border: rgba(243, 240, 232, 0.14);
+  --shadow: 0 24px 70px rgba(0, 0, 0, 0.3);
 }
 
 * {
@@ -23,10 +23,8 @@ html {
 
 body {
   margin: 0;
-  font-family: "Inter", sans-serif;
-  background: radial-gradient(circle at top left, rgba(122, 231, 212, 0.18), transparent 30%),
-    radial-gradient(circle at right center, rgba(140, 171, 255, 0.22), transparent 25%),
-    linear-gradient(180deg, #050d1a 0%, #07111f 100%);
+  font-family: "Space Grotesk", sans-serif;
+  background: var(--bg);
   color: var(--text);
   line-height: 1.7;
 }
@@ -64,8 +62,8 @@ button {
   top: 0;
   z-index: 50;
   backdrop-filter: blur(14px);
-  background: rgba(5, 13, 26, 0.72);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(16, 16, 16, 0.9);
+  border-bottom: 1px solid var(--border);
 }
 
 .nav-wrap {
@@ -82,8 +80,8 @@ button {
   width: 42px;
   height: 42px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--primary), #dffaf6);
-  color: #071521;
+  background: var(--primary);
+  color: #101010;
   font-weight: 900;
   letter-spacing: 0.08em;
 }
@@ -197,9 +195,9 @@ button {
 }
 
 .button.primary {
-  background: linear-gradient(135deg, var(--primary), #dffaf6);
-  color: #071521;
-  box-shadow: 0 16px 30px rgba(122, 231, 212, 0.2);
+  background: var(--primary);
+  color: #101010;
+  box-shadow: 0 16px 30px rgba(215, 255, 87, 0.12);
 }
 
 .button.secondary {
