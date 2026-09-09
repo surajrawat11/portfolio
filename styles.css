@@ -498,6 +498,14 @@ button {
   color: var(--muted);
 }
 
+.project-body .project-stack {
+  margin-bottom: 0.9rem;
+  color: var(--primary);
+  font-family: "DM Mono", monospace;
+  font-size: 0.72rem;
+  line-height: 1.5;
+}
+
 .project-body a {
   color: var(--primary);
   font-weight: 600;
