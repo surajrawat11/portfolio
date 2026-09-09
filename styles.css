@@ -531,8 +531,21 @@ button {
 }
 
 .project-body a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
   color: var(--primary);
   font-weight: 600;
+}
+
+.project-body a::after {
+  content: "->";
+  transition: transform 0.2s ease;
+}
+
+.project-body a:hover::after,
+.project-body a:focus-visible::after {
+  transform: translateX(4px);
 }
 
 .timeline {
