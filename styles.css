@@ -466,6 +466,36 @@ button {
   color: var(--muted);
 }
 
+.recognition-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.recognition-card {
+  min-height: 220px;
+  padding: 1.4rem;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+
+.recognition-number {
+  color: var(--primary);
+  font-family: "DM Mono", monospace;
+  font-size: 0.8rem;
+}
+
+.recognition-card h3 {
+  margin: 3rem 0 0.6rem;
+  font-size: 1.25rem;
+}
+
+.recognition-card p {
+  margin: 0;
+  color: var(--muted);
+}
+
 .contact-box {
   display: flex;
   justify-content: space-between;
@@ -531,6 +561,10 @@ button {
 
   .projects-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .recognition-grid {
+    grid-template-columns: 1fr;
   }
 
   .timeline-item {
