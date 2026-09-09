@@ -43,7 +43,14 @@ const sectionObserver = new IntersectionObserver(
       }
 
       navLinks.forEach((link) => {
-        link.classList.toggle('is-active', link.getAttribute('href') === `#${entry.target.id}`);
+        const isActive = link.getAttribute('href') === `#${entry.target.id}`;
+        link.classList.toggle('is-active', isActive);
+
+        if (isActive) {
+          link.setAttribute('aria-current', 'location');
+        } else {
+          link.removeAttribute('aria-current');
+        }
       });
     });
   },
