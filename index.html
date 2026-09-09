@@ -17,18 +17,24 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <div class="page-shell">
       <header class="site-header">
         <div class="container nav-wrap">
           <a href="#home" class="brand" aria-label="Suraj Singh Rawat home">SR</a>
 
-          <button class="nav-toggle" aria-expanded="false" aria-label="Open menu">
+          <button
+            class="nav-toggle"
+            aria-expanded="false"
+            aria-controls="main-navigation"
+            aria-label="Open menu"
+          >
             <span></span>
             <span></span>
             <span></span>
           </button>
 
-          <nav class="site-nav" aria-label="Main navigation">
+          <nav id="main-navigation" class="site-nav" aria-label="Main navigation">
             <a href="#about">01 About</a>
             <a href="#skills">02 Skills</a>
             <a href="#projects">03 Work</a>
@@ -39,7 +45,7 @@
         </div>
       </header>
 
-      <main>
+      <main id="main-content">
         <section id="home" class="hero section">
           <div class="container hero-grid">
             <div class="hero-content">

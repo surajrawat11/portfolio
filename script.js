@@ -11,16 +11,27 @@ if (yearEl) {
 }
 
 if (navToggle && nav) {
+  const closeMenu = () => {
+    nav.classList.remove('is-open');
+    navToggle.setAttribute('aria-expanded', 'false');
+    navToggle.setAttribute('aria-label', 'Open menu');
+  };
+
   navToggle.addEventListener('click', () => {
     const isOpen = nav.classList.toggle('is-open');
     navToggle.setAttribute('aria-expanded', String(isOpen));
+    navToggle.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
   });
 
   nav.querySelectorAll('a').forEach((link) => {
-    link.addEventListener('click', () => {
-      nav.classList.remove('is-open');
-      navToggle.setAttribute('aria-expanded', 'false');
-    });
+    link.addEventListener('click', closeMenu);
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+      closeMenu();
+      navToggle.focus();
+    }
   });
 }
 

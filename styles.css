@@ -34,6 +34,23 @@ a {
   text-decoration: none;
 }
 
+.skip-link {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 100;
+  padding: 0.7rem 1rem;
+  background: var(--primary);
+  color: #101010;
+  font-weight: 700;
+  transform: translateY(-180%);
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
 button {
   font: inherit;
 }
@@ -129,6 +146,15 @@ button {
   background: #fff;
   border-radius: 999px;
   margin: 5px 0;
+}
+
+.nav-toggle:focus-visible,
+.button:focus-visible,
+.site-nav a:focus-visible,
+.project-body a:focus-visible,
+.socials a:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 4px;
 }
 
 .hero {
